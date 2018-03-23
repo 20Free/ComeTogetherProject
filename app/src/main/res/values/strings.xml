@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">Come Together Project</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- some helpful strings -->
+    <string name="space">\u0020</string>
+    <string name="comma">,</string>
+    <string name="enter">\n</string>
+    <string name="drawable">drawable</string>
+
+    <!-- Map keys-->
+    <string name="map_username_key">USERNAME</string>
+    <string name="map_password_key">PASSWORD</string>
+    <string name="map_email_key">EMAIL</string>
+    <string name="map_first_name_key">FIRST_NAME</string>
+    <string name="map_last_name_key">LAST_NAME</string>
+    <string name="map_phone_number_key">PHONE_NUMBER</string>
+    <string name="map_country_key">COUNTRY</string>
+    <string name="map_province_state_key">PROVINCE_STATE</string>
+    <string name="map_city_key">CITY</string>
+    <string name="map_language_key">LANGUAGE</string>
+    <string name="map_photo_link_key">PHOTO_LINK</string>
+    <string name="map_users_name_key">USER\'S_NAME</string>
+    <string name="map_friend_key">FRIEND</string>
+    <string name="map_user_key">USER</string>
+    <string name="map_event_title_key">eventTitle</string>
+    <string name="map_event_details_key">eventDetails</string>
+    <string name="map_event_description_key">eventDescription</string>
+    <string name="map_event_type_key">eventType</string>
+    <string name="map_event_tickets_link_key">eventTicketsLink</string>
+
+    <!-- JSON Object keys -->
+    <string name="json_username_key">username</string>
+    <string name="json_password_key">password</string>
+    <string name="json_locations_key">locations</string>
+    <string name="json_email_address_key">emailAddress</string>
+    <string name="json_full_name_key">fullName</string>
+    <string name="json_phone_number_key">phoneNumber</string>
+    <string name="json_photo_link_key">photoLink</string>
+    <string name="json_country_key">country</string>
+    <string name="json_province_state_key">provinceOrState</string>
+    <string name="json_city_key">city</string>
+    <string name="json_language_key">language</string>
+    <string name="json_event_title_key">eventTitle</string>
+    <string name="json_event_details_key">eventDetails</string>
+    <string name="json_event_description_key">eventDescription</string>
+    <string name="json_event_type_key">eventType</string>
+    <string name="json_event_tickets_link_key">eventTicketsLink</string>
+    <string name="json_event_date_key">eventDate</string>
+    <string name="json_event_time_key">eventTime</string>
+    <string name="json_event_photo_link_key">eventPhotoLink</string>
+    <string name="json_event_locations_key">eventLocations</string>
+
+    <!-- web app urls -->
+    <string name="url">http://cometogetherr.azurewebsites.net/</string>
+    <string name="register_service_url">cometogetherapp/register/</string>
+    <string name="login_service_url">cometogetherapp/login/</string>
+    <string name="event_service_url">cometogetherapp/event/</string>
+    <string name="blank">blank</string>
+    <string name="load_events">loadevents</string>
+
+    <!-- Strings related to registering a user -->
+    <string name="title_activity_register">Register</string>
+
+    <!-- register_page_1_content.xml -->
+    <string name="username_view_text">Username:</string>
+    <string name="username_text_hint">enter username</string>
+    <string name="password_view_text">Password:</string>
+    <string name="password_text_hint">enter password</string>
+    <string name="email_view_text">Email:</string>
+    <string name="email_text_hint">enter email</string>
+    <string name="first_name_view_text">First Name:</string>
+    <string name="first_name_text_hint">enter first name</string>
+    <string name="last_name_view_text">Last Name:</string>
+    <string name="last_name_text_hint">enter last name</string>
+    <string name="phone_number_view_text">Phone Number:</string>
+    <string name="phone_number_text_hint">enter phone number</string>
+
+    <!-- RegisterPage1.java -->
+    <string name="username_must_be_unique">Username must be unique</string>
+    <string name="password_must_be_long_enough">Password must be longer than 4 characters</string>
+    <string name="password_invalid_error">Password is invalid</string>
+    <string name="username_already_exists_error">error: username already exists</string>
+
+    <!-- register_page_2_content.xml -->
+    <string name="register_choose_location_view_text">Choose a location you want to see events for:</string>
+    <string name="register_country_view_text">Country:</string>
+    <string name="register_province_state_view_text">Province/State:</string>
+    <string name="register_city_view_text">City:</string>
+    <string name="register_language_view_text">Choose a language:</string>
+
+    <!-- RegisterPage2.java -->
+    <string-array name="register_countries">
+        <item>Canada</item>
+    </string-array>
+    <string-array name="register_provinces_states">
+        <item>ON</item>
+    </string-array>
+    <string-array name="register_cities">
+        <item>Ottawa</item>
+        <item>Toronto</item>
+    </string-array>
+    <string-array name="register_languages">
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="register_language_shorts">
+        <item>en</item>
+        <item>fn</item>
+        <item>sp</item>
+    </string-array>
+
+    <!-- register_page_3_content.xml -->
+    <string name="upload_button_text">choose profile photo</string>
+    <string name="user_image_view_desc">Image to upload</string>
+
+    <!-- RegisterPage3.java -->
+    <string name="unknown_username">unknown</string>
+    <string name="registration_error">Registration Failed</string>
+
+    <!-- RegisterPage1.java, RegisterPage3.java-->
+    <string name="username_equal">username equal</string>
+
+    <!-- come_together_login_activity.xml -->
+    <string name="ctLogo_image_view_desc">Come Together Logo</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+
+    <!-- ComeTogetherLogin.java -->
+    <string name="title_activity_login">Register or Login</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_could_not_login">Error: could not login</string>
+
+    <!-- Welcome Activity.java -->
+    <string name="title_welcome_page">Event Feed</string>
+    <string name="date_format">yyyy-MM-dd hh:mm:ss</string>
+    <string name="error_could_not_fetch_events">Error: Could not fetch events</string>
+
+    <!-- welcome_menu.xml -->
+    <string name="profile_bar_button">Profile</string>
+    <string name="messenger_bar_button">Messenger</string>
+
+    <!-- create_event_content_page_1.xml -->
+    <string name="event_title_view_text">Event Title:</string>
+    <string name="event_title_text_hint">Enter event title</string>
+    <string name="event_details_view_text">Event Details:</string>
+    <string name="event_details_text_hint">Enter event details</string>
+    <string name="event_description_view_text">Event Description:</string>
+    <string name="event_description_text_hint">Enter event description</string>
+    <string name="event_type_view_text">Event Type:</string>
+    <string name="event_type_text_hint">Event type not listed? Enter it here!</string>
+    <string name="event_tickets_link_view_text">Tickets Link:</string>
+    <string name="event_tickets_link_text_hint">Enter Tickets link</string>
+
+    <!-- CreateEventPage1.java -->
+    <string-array name="event_types">
+        <item>Conference</item>
+        <item>Meeting</item>
+        <item>Concert</item>
+        <item>Seminar</item>
+        <item>Family Event</item>
+        <item>Birthday</item>
+        <item>Retreat</item>
+        <item>Anniversary</item>
+    </string-array>
+
+    <!-- create_event_content_page_2.xml -->
+
+    <!-- Activity Titles -->
+    <string name="title_activity_event">Event Page</string>
+    <string name="title_activity_messenger">Messenger</string>
+    <string name="title_activity_profile">User Profile</string>
+
+
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="title_activity_message">MessageActivity</string>
+
+
+
+    <!--Event map keys -->
+    <string name="key_event_pic">event pic</string>
+    <string name="key_event_name">event name</string>
+    <string name="key_event_location">event location</string>
+    <string name="key_event_time">event time</string>
+    <string name="key_event_details">event details</string>
+    <string name="key_event_description">event description</string>
+    <string name="key_event_type">event type</string>
+    <string name="key_event_tickets_link">event tickets link</string>
+
+    <string name="key_message_text">message</string>
+    <string name="key_message_time">time</string>
+
+    <string name="send_message">Send</string>
+    <string name="write_message">Write Message</string>
+    <string name="title_activity_new_message">NewMessageActivity</string>
+    <string name="title_activity_edit_event">EditEvent</string>
+    <string name="title_activity_view_event">ViewEvent</string>
+
+    <string name="title_activity_create_event_page2">CreateEventPage2</string>
+    <string name="title_activity_register_page3">RegisterPage3</string>
+
+    <string name="dropbox_access_key">ypTkH5v4AOAAAAAAAAAAIteSDzkmoATZHRHGmbv_pGdVF45fBl3rKJ_oEbdI0_X-</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

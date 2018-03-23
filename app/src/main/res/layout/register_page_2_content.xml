@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout content for the second register page.
+     Java code for this is in RegisterPage2.java. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_register_page2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jonathan.cometogetherproject.RegisterPage2"
+    tools:showIn="@layout/register_page_2_activity"
+    android:layout_gravity="center_vertical">
+
+    <!-- Displays the text: "Choose a location you want to see events for:" -->
+    <TextView
+        android:text="@string/register_choose_location_view_text"
+        android:id="@+id/register_choose_location_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="100dp"/>
+
+    <!-- Displays the text: "Country:" -->
+    <TextView
+        android:text="@string/register_country_view_text"
+        android:id="@+id/register_country_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_choose_location_view"
+        android:paddingBottom="10dp"/>
+
+    <!-- Drop down spinner that displays the countries available -->
+    <Spinner
+        android:id="@+id/register_country_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_choose_location_view"
+        android:layout_toEndOf="@+id/register_country_view"/>
+
+    <!-- Center layout that "divides the page in half" -->
+    <LinearLayout
+        android:id="@+id/register_center_layout"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"/>
+
+    <!-- Displays the text: "Province/State:" -->
+    <TextView
+        android:text="@string/register_province_state_view_text"
+        android:id="@+id/register_province_state_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_choose_location_view"
+        android:layout_toEndOf="@+id/register_center_layout"/>
+
+    <!-- Drop down spinner that displays the provinces or states available -->
+    <Spinner
+        android:id="@+id/register_province_state_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/register_province_state_view"
+        android:layout_below="@+id/register_choose_location_view"/>
+
+    <!-- Displays the text: "City:" -->
+    <TextView
+        android:text="@string/register_city_view_text"
+        android:id="@+id/register_city_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_country_view"
+        android:paddingBottom="20dp"/>
+
+    <!-- Drop down spinner that displays the cities available -->
+    <Spinner
+        android:id="@+id/register_city_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_country_view"
+        android:layout_alignStart="@+id/register_country_spinner"/>
+
+    <!-- Displays the text: "Choose a language:" -->
+    <TextView
+        android:text="@string/register_language_view_text"
+        android:id="@+id/register_language_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_city_view"/>
+
+    <!-- Drop down spinner that displays the languages available -->
+    <Spinner
+        android:id="@+id/register_language_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/register_language_view"
+        android:layout_below="@+id/register_city_view"/>
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Content for the first Create Event page -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_create_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jonathan.cometogetherproject.CreateEventPage1"
+    tools:showIn="@layout/create_event_activity_page_1"
+    android:gravity="center">
+
+    <!-- Displays the text: "Event Title:" -->
+    <TextView
+        android:text="@string/event_title_view_text"
+        android:id="@+id/eventTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/eventTitleText"
+        android:gravity="center_vertical"
+        android:layout_alignEnd="@+id/eventDescriptionView"/>
+
+    <!-- Text box for event title -->
+    <EditText
+        android:hint="@string/event_title_text_hint"
+        android:id="@+id/eventTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/eventTitleView"/>
+
+    <!-- Displays the text: "Event Details:" -->
+    <TextView
+        android:text="@string/event_details_view_text"
+        android:id="@+id/eventDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventTitleView"
+        android:layout_alignBottom="@+id/eventDetailsText"
+        android:gravity="center_vertical"
+        android:layout_alignEnd="@+id/eventDescriptionView"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Text box for entering the event details -->
+    <EditText
+        android:hint="@string/event_title_text_hint"
+        android:id="@+id/eventDetailsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventTitleText"
+        android:layout_toEndOf="@+id/eventDetailsView"/>
+
+    <!-- Displays the text: "Event Description:" -->
+    <TextView
+        android:text="@string/event_description_view_text"
+        android:id="@+id/eventDescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventDetailsView"
+        android:layout_alignBottom="@+id/eventDescriptionText"
+        android:gravity="center_vertical"/>
+
+    <!-- Text box for entering the event description -->
+    <EditText
+        android:hint="@string/event_description_text_hint"
+        android:id="@+id/eventDescriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/eventDescriptionView"
+        android:layout_below="@+id/eventDetailsText"/>
+
+    <!-- Displays the text Event Type: -->
+    <TextView
+        android:text="@string/event_type_view_text"
+        android:id="@+id/eventTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventDescriptionView"
+        android:layout_alignBottom="@+id/eventTypeChooser"
+        android:gravity="center_vertical"
+        android:layout_alignEnd="@+id/eventDescriptionView"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Drop down spinner for event types -->
+    <Spinner
+        android:id="@+id/eventTypeChooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventDescriptionText"
+        android:layout_toEndOf="@+id/eventTypeView"/>
+
+    <!-- Text box for entering an unlisted event type -->
+    <EditText
+        android:hint="@string/event_type_text_hint"
+        android:id="@+id/eventTypeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventTypeChooser"/>
+
+    <!-- Displays the text: "Tickets Link:" -->
+    <TextView
+        android:text="@string/event_tickets_link_view_text"
+        android:id="@+id/eventTicketsLinkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventTypeText"
+        android:layout_alignBottom="@+id/eventTicketsLinkText"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/eventDescriptionView"/>
+
+    <!-- Text box for entering the tickets link -->
+    <EditText
+        android:hint="@string/event_tickets_link_text_hint"
+        android:id="@+id/eventTicketsLinkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventTypeText"
+        android:layout_toEndOf="@+id/eventTicketsLinkView"/>
+
+</RelativeLayout>

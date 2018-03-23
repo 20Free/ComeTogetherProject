@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Content for the second Create Event page -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_create_event_page2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jonathan.cometogetherproject.CreateEventPage2"
+    tools:showIn="@layout/create_event_activity_page_2"
+    android:gravity="center">
+
+    <!-- layout for the event creation progress spinner -->
+    <LinearLayout
+        android:id="@+id/create_event_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ProgressBar
+            android:id="@+id/event_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <!-- Layout for creating the event -->
+    <RelativeLayout
+        android:id="@+id/create_event_form_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/eventDateTimeChooseView"
+            android:text="Choose a date and time for the event:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@+id/eventDateTimeChooseView"
+            android:id="@+id/dateAndTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/buttonEventDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Date"
+                android:layout_weight="1"
+                android:onClick="pickEventDate"/>
+
+            <Button
+                android:id="@+id/buttonEventTimePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Time"
+                android:headerBackground="@android:color/holo_blue_light"
+                android:layout_weight="1"
+                android:onClick="pickEventTime"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/dateAndTimeLayout"
+            android:id="@+id/chooseEventLocationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the location of the event: "/>
+
+        <TextView
+            android:layout_below="@+id/chooseEventLocationView"
+            android:id="@+id/eventCountryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country: "
+            android:paddingBottom="20dp"/>
+
+        <Spinner
+            android:layout_below="@id/chooseEventLocationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventCountrySpinner"
+            android:layout_toEndOf="@+id/eventCountryView"
+            android:layout_toRightOf="@+id/eventCountryView"/>
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/eventCenterLayout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventProvinceStateView"
+            android:text="Province/State: "
+            android:layout_below="@+id/chooseEventLocationView"
+            android:layout_toEndOf="@+id/eventCenterLayout"
+            android:layout_toRightOf="@+id/eventCenterLayout"/>
+
+        <Spinner
+            android:id="@+id/eventProvinceStateSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/eventProvinceStateView"
+            android:layout_toRightOf="@+id/eventProvinceStateView"
+            android:layout_below="@+id/chooseEventLocationView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventCountryView"
+            android:id="@+id/eventCityView"
+            android:text="City: "/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventCitySpinner"
+            android:layout_below="@+id/eventCountryView"
+            android:layout_alignStart="@+id/eventCountrySpinner"
+            android:layout_alignLeft="@+id/eventCountrySpinner"/>
+    </RelativeLayout>
+</RelativeLayout>

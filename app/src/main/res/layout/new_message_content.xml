@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_new_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jonathan.cometogetherproject.NewMessageActivity"
+    tools:showIn="@layout/new_message_activity">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_below="@+id/user"
+        android:id="@+id/message_list2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_text2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/message_text2"
+        android:layout_toLeftOf="@+id/send_button2"
+        android:layout_toStartOf="@+id/send_button2"
+        android:hint="@string/write_message"
+        android:layout_alignTop="@+id/send_button2" />
+
+    <Button
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/send_message_icon"
+        android:onClick="sendMessageNew" />
+
+</RelativeLayout>
